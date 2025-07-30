@@ -90,10 +90,28 @@
 
         <aside class="sidebar">
             <div class="sidebar__top-buttons">
-                <div class="sidebar__nav-button">Top Championships</div>
-                <div class="sidebar__nav-button">Top matches</div>
+                <div class="sidebar__nav-button">
+                    <img src="img/top1.svg" alt="" class="icon icon--top1" />
+                    Top Championships
+                </div>
+                <div class="sidebar__nav-button">
+                    <img src="img/top2.svg" alt="" class="icon icon--top2" />
+                    Top matches
+                </div>
             </div>
             <div class="sidebar__scroll">
+                <div class="sidebar__live">
+                    <div class="sidebar__live-button">
+                        <div class="live-button__icon">
+                            <img src="img/triangle1.svg" alt="Play icon" />
+                        </div>
+                        <span>LIVE EVENTS: 143</span>
+                        <div class="live-button__arrow">
+                            <img src="img/triangle2.svg" alt="Arrow icon" />
+                        </div>
+                    </div>
+                </div>
+
                 <ul class="sidebar__menu">
                     <li class="sidebar__menu-item">
                         <a href="#" class="sidebar__menu-link">
@@ -181,26 +199,56 @@
         </aside>
         <!-- sidebar--right -->
         <aside class="sidebar sidebar--right">
-            <div class="">
-                <ul class="sidebar__menu">
-                    <li class="sidebar__menu-item">
-                        <a href="#" class="sidebar__menu-link">
-                            <img src="img/sidebar1.svg" alt="">
-                            <span>Right Games</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="app-promo">
+                <!-- Верхні кнопки -->
+                <div class="app-promo__actions">
+                    <a class="app-promo__btn app-promo__btn--primary">MY BETS</a>
+                    <a class="app-promo__btn app-promo__btn--secondary">PLEASE LOG IN!</a>
+                </div>
 
-                <div class="sidebar__links js-sidebar-toggle">
-                    <div class="sidebar__nav-button">Right Navigation</div>
-                    <ul class="sidebar__links-list">
-                        <li class="sidebar__links-item">
-                            <a href="#" class="sidebar__links-link">Right Sidebar Link</a>
-                        </li>
+                <!-- Блок з мобільними додатками -->
+                <div class="app-promo__card">
+                    <div class="app-promo__header">
+                        <img src="img/apple.svg" alt="Apple" class="app-promo__icon" />
+                        <span class="app-promo__title">22BET MOBILE APPS</span>
+                        <img src="img/android.svg" alt="Android" class="app-promo__icon" />
+                    </div>
 
-                    </ul>
+                    <div class="app-promo__body">
+                        <p class="app-promo__text">A WHOLE WORLD OF BETTING IN YOUR POCKET</p>
+                        <img src="app-phone.png" alt="Mobile App" class="app-promo__image" />
+                    </div>
+
+                    <button class="app-promo__bonus-btn">GANHAR BONUS</button>
                 </div>
             </div>
+
+            <ul class="sidebar__list">
+                <li class="sidebar__list--item">
+                    <a href="#" class="sidebar__item-link">
+                        <div class="sidebar__image-wrapper">
+                            <img src="img/sidebar-right1.png" alt="">
+                            <span class="sidebar__image-text">Roulette</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar__list--item">
+                    <a href="#" class="sidebar__item-link">
+                        <div class="sidebar__image-wrapper">
+                            <img src="img/sidebar-right2.png" alt="">
+                            <span class="sidebar__image-text">Poker</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar__list--item">
+                    <a href="#" class="sidebar__item-link">
+                        <div class="sidebar__image-wrapper">
+                            <img src="img/sidebar-right3.png" alt="">
+                            <span class="sidebar__image-text">Slots</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </aside>
 
         <article class="content info">
