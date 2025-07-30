@@ -246,7 +246,7 @@ article ul>li:before {
     position: relative;
     display: flex;
     align-items: center;
-    margin-top: 85px;
+    margin-top: 88px;
     overflow: hidden;
     height: auto;
     flex-direction: column;
@@ -380,9 +380,10 @@ article ul>li:before {
 .app-promo__card {
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 16px;
-    text-align: center;
+    padding: 10px 10px 20px 10px;
     margin-bottom: 10px;
+    position: relative;
+    overflow: visible;
 }
 
 .app-promo__header {
@@ -403,30 +404,50 @@ article ul>li:before {
     font-size: 13px;
 }
 
+.app-promo__body-wrapper {
+    position: relative;
+    margin: 0 -10px;
+    padding: 30px 10px;
+    background: linear-gradient(to right, #0C8B97, #2DB155);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
 .app-promo__body {
-    margin-bottom: 16px;
-    background: linear-gradient(to bottom, #0a5b56, #1ba37f);
+    /* display: flex;
+    align-items: flex-start; */
+    padding-right: 40px;
+    position: relative;
 }
 
 .app-promo__text {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 13px;
     color: white;
+    width: 150px;
+    /* text-align: left; */
 }
 
 .app-promo__image {
-    width: 120px;
-    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 55px;
+    height: auto;
+    z-index: 2;
 }
 
 .app-promo__bonus-btn {
-    background-color: #ff3d3d;
+    background-color: #FF4949;
     color: white;
     border: none;
-    padding: 12px;
-    width: 100%;
-    font-weight: bold;
-    border-radius: 6px;
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 50px;
     cursor: pointer;
 }
 
