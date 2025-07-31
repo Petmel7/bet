@@ -137,9 +137,9 @@
         padding: 15px;
     }
 
-    .title {
+    /* .title {
         font-size: 36px;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
@@ -150,9 +150,9 @@
         margin-bottom: 5px;
     }
 
-    .title {
+    /* .title {
         font-size: 26px;
-    }
+    } */
 
     .hero__content {
         padding: 8px;
@@ -196,5 +196,30 @@
     .main {
         margin: 0;
         padding: 0 10px;
+    }
+}
+
+/* bet-info */
+@media (max-width: 1350px) {
+    .bet-info__block-wrapper {
+        flex-direction: column;
+    }
+
+    .bet-info__block:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+/* rating */
+@media (max-width: 1167px) {
+    .rating-wrapper {
+        gap: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .rating-wrapper {
+        flex-direction: column;
+        gap: 0;
     }
 }
