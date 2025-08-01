@@ -1,4 +1,18 @@
 /* General */
+@media (max-width: 1082px) {
+    .content__title {
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 506px) {
+    .content__title {
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 480px) {
     .content {
         padding: 10px;
@@ -8,10 +22,6 @@
         padding: 8px;
     }
 
-    .content__title {
-        font-weight: 800;
-        font-size: 24px;
-    }
 }
 
 /*Header */
@@ -221,5 +231,25 @@
     .rating-wrapper {
         flex-direction: column;
         gap: 0;
+    }
+}
+
+/* footer */
+@media (min-width: 1245px) {
+    .footer__top {
+        width: 690px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer__container {
+        max-width: calc(100% - 506px);
+    }
+}
+
+@media (max-width: 490px) {
+    .footer__top {
+        flex-direction: column;
     }
 }
