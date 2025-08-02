@@ -812,7 +812,6 @@ article ol>li::before {
 
 .rating-column {
     flex: 1;
-    min-width: 300px;
 }
 
 .rating-row {
@@ -1003,7 +1002,6 @@ article ol>li::before {
     display: none;
 }
 
-/* up */
 .up {
     position: fixed;
     bottom: 60px;
@@ -1014,8 +1012,12 @@ article ol>li::before {
     transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 999;
     background-color: #185A61;
-    padding: 15px 20px;
+    padding: 15px 17px;
     border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .up--visible {
@@ -1025,13 +1027,15 @@ article ol>li::before {
 }
 
 .up__icon {
+    width: 20px;
+    height: 20px;
     background-image: url("../img/up-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     background-color: transparent;
     border: none;
-    width: 20px;
-    height: 20px;
     cursor: pointer;
+
+    display: block;
 }
