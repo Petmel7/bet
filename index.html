@@ -33,7 +33,12 @@
 
         <nav class="header__menu js-header-menu">
             <ul class="header__menu-list">
-                <li class="header__menu-item"><a href="#">Bonus</a></li>
+                <li class="header__menu-item header__dropdown">
+                    <a href="#" class="sidebar__button js-dropdown-toggle">Bonus</a>
+                    <div class="dropdown__menu">
+                        <p class="dropdown__item">Promo Code</p>
+                    </div>
+                </li>
                 <li class="header__menu-item"><a href="#">App</a></li>
                 <li class="header__menu-item"><a href="#">Casino</a></li>
                 <li class="header__menu-item"><a href="#">Live</a></li>
@@ -606,6 +611,7 @@
     <script src="./js/sidebar-toggle.js" defer></script>
     <script src="./js/scroll-btn.js" defer></script>
     <script src="./js/observer.js" defer></script>
+    <script src="./js/header-dropdown.js" defer></script>
 </body>
 
 </html>
