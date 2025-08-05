@@ -50,14 +50,24 @@ a {
 }
 
 .button {
+    background-color: #2E9355;
+}
+
+.second__button {
+    background-color: #185A61;
+}
+
+.button,
+.second__button {
     text-align: center;
     border-radius: 50px;
     padding: 14px 32px;
     cursor: pointer;
-    background-color: #2E9355;
     transition: transform 0.3s ease;
     text-transform: uppercase;
     color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .button:hover {
@@ -97,6 +107,10 @@ article ul>li:before {
 .content__subtitle--second {
     color: #FFC512;
     margin-bottom: 30px;
+}
+
+.content__subtitle--bonus {
+    color: #ffffff;
 }
 
 .content__text {
@@ -165,8 +179,7 @@ article ul>li:before {
     margin-left: auto;
 }
 
-.header__menu-item {
-    padding: 12px 0;
+.header__menu-item a {
     text-transform: uppercase;
 }
 
@@ -187,8 +200,7 @@ article ul>li:before {
     gap: 8px;
 }
 
-.header__button {
-    /* min-width: 120px; */
+/* .header__button {
     padding: 12px 32px;
     font-weight: 600;
     font-size: 14px;
@@ -199,9 +211,9 @@ article ul>li:before {
     transition: transform 0.3s ease;
     text-transform: uppercase;
     color: #ffffff;
-}
+} */
 
-.header__button:hover {
+/* .header__button:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -213,7 +225,7 @@ article ul>li:before {
 
 .header__button--signup {
     background-color: #2E9355;
-}
+} */
 
 .header__lang {
     border-radius: 50px;
@@ -303,12 +315,54 @@ article ul>li:before {
     border-radius: 6px;
 }
 
+.hero--bonus {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hero__bonus-wrapper {
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+.hero__button--bonus {
+    margin-right: 16px;
+}
+
 .background {
     background-image: url("../img/background.png");
 }
 
 .background__second {
     background-image: url("../img/background2.png");
+}
+
+.background__third {
+    background-image: url("../img/background3.png");
+}
+
+.background__fourth {
+    background-image: url("../img/background4.png");
+}
+
+.background__fifth {
+    background-image: url("../img/background5.png");
+}
+
+.background__sixth {
+    background-image: url("../img/background6.png");
+}
+
+.background__seventh {
+    background-image: url("../img/background7.png");
+}
+
+.background__eighth {
+    background-image: url("../img/background8.png");
 }
 
 .hero__foreground-img {
@@ -330,6 +384,15 @@ article ul>li:before {
     padding: 0 16px;
     padding: 70px 20px;
     border-radius: 8px;
+}
+
+.hero__content--bonus {
+    margin: 0 auto;
+}
+
+.hero__content--compact {
+    max-width: 700px;
+    padding-left: 240px;
 }
 
 .hero__content p {
@@ -368,6 +431,10 @@ article ul>li:before {
     z-index: 10;
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+
+.sidebar__bonus {
+    padding-top: 420px;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -580,7 +647,6 @@ article ul>li:before {
     gap: 8px;
 }
 
-/* ====================== */
 .sidebar__button.active::after {
     transform: translateY(-50%) rotate(180deg);
 }
@@ -604,8 +670,6 @@ article ul>li:before {
 .header__dropdown.open .dropdown__menu {
     display: block;
 }
-
-/* ========================= */
 
 .icon {
     width: 16px;
@@ -1083,3 +1147,86 @@ article ol>li::before {
 
     display: block;
 }
+
+/* app */
+.app-download {
+    display: flex;
+    align-items: center;
+}
+
+.app-download__links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+}
+
+.app-download__link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 24px;
+    border-radius: 6px;
+}
+
+.app-download__link--ios {
+    background-color: #69716B;
+    margin-bottom: 16px;
+}
+
+.app-download__link--android {
+    background-color: #367E32;
+}
+
+
+
+
+
+/* .hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.hero__content-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-left: 40px;
+} */
+
+/* .app-download {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.app-download__links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app-download__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.app-download__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} */

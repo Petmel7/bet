@@ -279,3 +279,15 @@
         flex-direction: column;
     }
 }
+
+@media (max-width: 768px) {
+    .hero__button-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__button--bonus {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
