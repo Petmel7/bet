@@ -141,6 +141,12 @@
 }
 
 /* Hero */
+@media (max-width: 1024px) {
+    .hero__content--compact {
+        padding-left: 20px;
+    }
+}
+
 @media (max-width: 767px) {
     .hero__content {
         max-width: 400px;
@@ -289,5 +295,66 @@
     .hero__button--bonus {
         margin-right: 0;
         margin-bottom: 20px;
+    }
+}
+
+/* app */
+@media (max-width: 768px) {
+    .app-download__link {
+        gap: 5px;
+        padding: 6px 20px;
+        border-radius: 6px;
+    }
+
+    .app-download__links p {
+        font-size: 12px;
+    }
+
+    .app-download__links img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* casino */
+@media (min-width: 480px) {
+    .casino__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .casino__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .casino__image-text {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .casino__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1240px) {
+    .casino__image-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .casino__image-text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .casino__image-text {
+        font-size: 14px;
+        padding: 20px 0;
     }
 }

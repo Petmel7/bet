@@ -136,6 +136,21 @@ article ul>li:before {
     text-decoration: underline;
 }
 
+.content__list {
+    margin-bottom: 16px;
+}
+
+.content__list li {
+    position: relative;
+    padding-left: 10px;
+}
+
+.content__list li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+}
+
 /* Header */
 .header,
 .header__menu,
@@ -365,6 +380,10 @@ article ul>li:before {
     background-image: url("../img/background8.png");
 }
 
+.background__ninth {
+    background-image: url("../img/background9.png");
+}
+
 .hero__foreground-img {
     position: absolute;
     bottom: 0;
@@ -435,6 +454,11 @@ article ul>li:before {
 
 .sidebar__bonus {
     padding-top: 420px;
+    transition: padding 0.3s ease;
+}
+
+.sidebar__bonus--no-padding {
+    padding-top: 20px;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -1157,7 +1181,11 @@ article ol>li::before {
 .app-download__links {
     display: flex;
     flex-direction: column;
-    margin-right: 200px;
+}
+
+.app-download__links p {
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .app-download__link {
@@ -1177,56 +1205,50 @@ article ol>li::before {
     background-color: #367E32;
 }
 
-
-
-
-
-/* .hero {
-    position: relative;
-    overflow: hidden;
+/* casino */
+.casino__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.hero__background {
-    height: 100%;
-    width: 100%;
+.casino__image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.casino__image-wrapper img {
+    display: block;
+    border-radius: 6px;
+}
+
+.casino__image-text {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.hero__content-wrapper {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    padding-left: 40px;
-} */
-
-/* .app-download {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: relative;
-}
-
-.app-download__links {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.app-download__link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-}
-
-.app-download__logo {
-    position: absolute;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-} */
+    color: white;
+    pointer-events: none;
+    background-color: #2E9355;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* live */
+.live__text {
+    margin-bottom: 16px;
+}
+
+.live__list {
+    margin-bottom: 32px;
+}
