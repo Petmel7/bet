@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const toggleBtn = document.querySelector(".js-dropdown-toggle");
     const dropdown = toggleBtn.closest(".header__dropdown");
@@ -15,3 +16,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
