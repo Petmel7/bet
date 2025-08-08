@@ -412,6 +412,14 @@ article ul>li:before {
     background-image: url("../img/background16.png");
 }
 
+.background__terms {
+    background-image: url("../img/background17.png");
+}
+
+.background__gaming {
+    background-image: url("../img/background18.png");
+}
+
 .hero__foreground-img {
     position: absolute;
     bottom: 0;
